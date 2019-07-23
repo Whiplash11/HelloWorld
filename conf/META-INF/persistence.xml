@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<persistence >
+    version="2.1"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+
+        <persistence-unit name="jpa" transaction-type="RESOURCE_LOCAL">
+
+
+
+            <properties>
+
+                <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+                <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/students?useUnicode=true&characterEncoding=utf-8&useSSL=false"/>
+                <property name="javax.persistence.jdbc.user" value="root"/>
+                <property name="javax.persistence.jdbc.password" value="123456"/>
+
+
+                <property name="hibernate.format_sql" value="true"/><!-- ?????sql?? -->
+                <property name="hibernate.show_sql" value="true"/> <!-- ????????sql?? -->
+                <property name="hibernate.hbm2ddl.auto" value="update"/>
+            </properties>
+        </persistence-unit>
+
+
+        <!-- Invoke 'Generate' action to add tags or functions -->
+
+
+</persistence>
